@@ -119,8 +119,8 @@ export default function Hero() {
       {/* Background Glow */}
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_70%_60%_at_60%_50%,rgba(27,205,160,0.04)_0%,transparent_70%)]" />
 
-      <div className="section-container relative z-10 w-full max-w-4xl">
-        <div className="pt-12 md:pt-0">
+      <div className="section-container relative z-10 w-full">
+        <div className="pt-12 md:pt-0 max-w-4xl">
           <div>
             <motion.h1 
               initial={{ opacity: 0, y: 24 }}

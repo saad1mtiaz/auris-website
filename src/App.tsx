@@ -5,9 +5,11 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 
 export default function App() {
+  const basename = import.meta.env.DEV ? '/' : '/auris-website/';
+
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />

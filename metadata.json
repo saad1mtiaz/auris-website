@@ -1,0 +1,8 @@
+{
+  "name": "Auris",
+  "description": "Audio intelligence infrastructure for privacy-critical environments. On-device audio classification that respects data sovereignty.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

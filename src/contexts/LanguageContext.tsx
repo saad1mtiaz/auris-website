@@ -52,7 +52,7 @@ export const translations = {
       sectionLabel: 'The problem we solve',
       title1: 'Sound carries information.',
       title2: 'Capturing it carries risk.',
-      title3: 'Before Auris, you had no choice.',
+      title3: 'Before <em class="text-accent not-italic">Auris</em>, you had no choice.',
       items: [
         {
           title: 'The Unheard Fall',
@@ -211,7 +211,7 @@ export const translations = {
       sectionLabel: 'Unser Lösungsansatz',
       title1: 'Geräusche transportieren Informationen.',
       title2: 'Ihre Erfassung birgt Risiken.',
-      title3: 'Vor Auris hatten Sie keine Wahl.',
+      title3: 'Vor <em class="text-accent not-italic">Auris</em> hatten Sie keine Wahl.',
       items: [
         {
           title: 'Der ungehörte Sturz',

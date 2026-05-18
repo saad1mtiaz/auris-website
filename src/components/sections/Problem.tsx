@@ -24,11 +24,11 @@ export default function Problem() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-serif text-[clamp(36px,4.5vw,58px)] font-light leading-[1.15] max-w-[700px] mb-20"
+          className="font-serif text-[clamp(36px,4.5vw,58px)] font-light leading-[1.15] max-w-[800px] mb-20"
         >
           {t.problem.title1}<br />
           {t.problem.title2}<br />
-          Before <em className="text-accent not-italic">Auris</em>, you had no choice.
+          <span dangerouslySetInnerHTML={{ __html: t.problem.title3 }} />
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 bg-border-hairline hairline-border">

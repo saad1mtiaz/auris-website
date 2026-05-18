@@ -27,9 +27,11 @@ export default function ContactPage() {
         form.reset();
       } else {
         setStatus('error');
+        console.error('EmailJS Error:', result);
       }
     } catch (error) {
       setStatus('error');
+      console.error('EmailJS Exception:', error);
     }
   };
 

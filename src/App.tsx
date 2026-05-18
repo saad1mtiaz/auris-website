@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 
 export default function App() {
-  const basename = import.meta.env.DEV ? '/' : '/auris-website/';
+  const basename = '/';
 
   return (
     <LanguageProvider>

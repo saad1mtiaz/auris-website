@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
+import emailjs from '@emailjs/browser';
 
 export default function ContactPage() {
   const { t } = useLanguage();
@@ -11,19 +12,17 @@ export default function ContactPage() {
     setStatus('saving');
 
     const form = e.currentTarget;
-    const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json'
-        },
-        body: formData
-      });
+      // NOTE: Replace these placeholder values with your actual EmailJS credentials
+      const result = await emailjs.sendForm(
+        'service_6izyd17',
+        'template_5c712lj',
+        form,
+        'pk4DHD0G0-Cz5Rh20'
+      );
 
-      const data = await response.json();
-      if (data.success) {
+      if (result.text === 'OK') {
         setStatus('success');
         form.reset();
       } else {
@@ -82,8 +81,6 @@ export default function ContactPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-              {/* NOTE: Replace the value below with your actual Web3Forms access key */}
-              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">

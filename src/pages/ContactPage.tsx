@@ -86,26 +86,26 @@ export default function ContactPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="name" className="font-mono text-[10px] tracking-widest text-text-ghost uppercase">
+                  <label htmlFor="user_name" className="font-mono text-[10px] tracking-widest text-text-ghost uppercase">
                     {t.contact?.nameLabel || 'Name'}
                   </label>
                   <input 
                     type="text" 
-                    id="name" 
-                    name="name" 
+                    id="user_name" 
+                    name="user_name" 
                     required
                     className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-white focus:outline-none focus:border-accent transition-colors"
                   />
                 </div>
                 
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="email" className="font-mono text-[10px] tracking-widest text-text-ghost uppercase">
+                  <label htmlFor="user_email" className="font-mono text-[10px] tracking-widest text-text-ghost uppercase">
                     {t.contact?.emailLabel || 'Email'}
                   </label>
                   <input 
                     type="email" 
-                    id="email" 
-                    name="email" 
+                    id="user_email" 
+                    name="user_email" 
                     required
                     className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-white focus:outline-none focus:border-accent transition-colors"
                   />

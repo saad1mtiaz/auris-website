@@ -8,6 +8,38 @@ export default function Privacy() {
   return (
     <section id="privacy" className="py-[140px]">
       <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-25 items-center">
+        <div className="privacy-content">
+        <motion.div 
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="flex items-center gap-4 mb-10">
+            <span className="label-mono">{t.privacy.sectionLabel}</span>
+            <div className="h-[1px] w-15 bg-accent/40" />
+          </div>
+
+          <h2 className="font-serif text-[clamp(32px,3.5vw,48px)] font-light leading-[1.15] mb-7">
+            {t.privacy.title}
+          </h2>
+          
+          <p className="text-[15px] text-text-muted leading-relaxed mb-10">
+            {t.privacy.subtitle}
+          </p>
+
+          <div className="flex flex-col gap-4">
+            {t.privacy.points.map((point, i) => (
+              <div key={i} className="flex items-start gap-4 text-[13px] text-text-muted leading-tight">
+                <div className="mt-1 w-[18px] h-[18px] border border-accent rounded-full flex-shrink-0 flex items-center justify-center bg-accent-dim">
+                  <div className="w-1.5 h-1.5 bg-accent rounded-full" />
+                </div>
+                <span>{point}</span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
         <div className="relative w-full bg-bg-secondary border border-border-hairline rounded-[4px] p-6 md:p-8 flex flex-col shadow-[0_0_50px_rgba(27,205,160,0.03)] overflow-hidden">
           {/* Header */}
           <div className="flex justify-between items-start mb-8 relative z-10">
@@ -96,39 +128,6 @@ export default function Privacy() {
             </div>
           </div>
         </div>
-
-      <div className="privacy-content">
-        <motion.div 
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="flex items-center gap-4 mb-10">
-            <span className="label-mono">{t.privacy.sectionLabel}</span>
-            <div className="h-[1px] w-15 bg-accent/40" />
-          </div>
-
-          <h2 className="font-serif text-[clamp(32px,3.5vw,48px)] font-light leading-[1.15] mb-7">
-            {t.privacy.title}
-          </h2>
-          
-          <p className="text-[15px] text-text-muted leading-relaxed mb-10">
-            {t.privacy.subtitle}
-          </p>
-
-          <div className="flex flex-col gap-4">
-            {t.privacy.points.map((point, i) => (
-              <div key={i} className="flex items-start gap-4 text-[13px] text-text-muted leading-tight">
-                <div className="mt-1 w-[18px] h-[18px] border border-accent rounded-full flex-shrink-0 flex items-center justify-center bg-accent-dim">
-                  <div className="w-1.5 h-1.5 bg-accent rounded-full" />
-                </div>
-                <span>{point}</span>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-      </div>
     </div>
     </section>
   );

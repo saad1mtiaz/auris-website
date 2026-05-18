@@ -28,7 +28,7 @@ export default function Problem() {
         >
           {t.problem.title1}<br />
           {t.problem.title2}<br />
-          {t.problem.title3}
+          Before <em className="text-accent not-italic">Auris</em>, you had no choice.
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 bg-border-hairline hairline-border">

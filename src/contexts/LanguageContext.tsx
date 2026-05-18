@@ -52,19 +52,19 @@ export const translations = {
       sectionLabel: 'The problem we solve',
       title1: 'Sound carries information.',
       title2: 'Capturing it carries risk.',
-      title3: 'Until now, you had to choose.',
+      title3: 'Before Auris, you had no choice.',
       items: [
         {
-          title: 'The fall no button\ncan report',
-          body: 'A resident falls at 3am. Unconscious. The call bell is unreachable. The next scheduled check is two hours away.'
+          title: 'The Unheard Fall',
+          body: 'A resident falls, unconscious. The call button is out of reach. Hours pass before the next scheduled check-in, turning a minor incident into a critical one.'
         },
         {
-          title: 'The blocker that\nkills every pitch',
-          body: 'Cloud audio solutions fail where they are needed most. German DPOs, hospital IT, and factory works councils reject them.'
+          title: 'The Privacy Deadlock',
+          body: 'Cloud-based audio monitoring is a non-starter for privacy-conscious organizations. DPOs, IT departments, and works councils in sectors like German healthcare demand solutions that keep data local.'
         },
         {
-          title: 'The incident with\nno witness',
-          body: 'A machine fails. A worker is injured. No alert fires. The liability lands anyway.'
+          title: 'The Unseen Liability',
+          body: 'A machine malfunctions, a worker is injured, but no alert is triggered. The incident goes unwitnessed, but the liability remains, creating significant financial and operational risk.'
         }
       ]
     },
@@ -116,7 +116,7 @@ export const translations = {
       sectionLabel: 'For builders',
       title1: 'Embed in days.',
       title2: 'Not months.',
-      subtitle: 'An SDK for B2B solution providers requiring audio intelligence. Your device already has a microphone. We give it a purpose.',
+      subtitle: 'An SDK for hardware solution providers requiring audio intelligence. Your device already has a microphone. We give it a purpose.',
       codeTitle: 'auris_sdk — example output',
       codeComment: '# Auris fires a structured event — nothing else',
       features: [
@@ -130,7 +130,7 @@ export const translations = {
         },
         {
           title: 'Vertical Models',
-          body: 'Pre-trained on healthcare, industrial, and facility sounds. Not generic classifiers.'
+          body: 'Pre-trained on healthcare, and care homes sounds. Not generic classifiers.'
         },
         {
           title: 'Custom Sounds',
@@ -142,7 +142,7 @@ export const translations = {
       label: 'Get in touch',
       title: 'Built for environments that cannot afford to get this wrong.',
       button: 'Contact us',
-      tag: "Early Stages @ TUM Venture Labs - Currently seeking integration partners"
+      tag: "Early Stage @ TUM Venture Labs - Currently seeking integration partners"
     },
     contact: {
       label: 'GET IN TOUCH',
@@ -211,19 +211,19 @@ export const translations = {
       sectionLabel: 'Unser Lösungsansatz',
       title1: 'Geräusche transportieren Informationen.',
       title2: 'Ihre Erfassung birgt Risiken.',
-      title3: 'Bisher mussten Sie sich entscheiden.',
+      title3: 'Vor Auris hatten Sie keine Wahl.',
       items: [
         {
-          title: 'Der Sturz, den kein Knopf\nmelden kann',
-          body: 'Ein Bewohner stürzt um 3 Uhr morgens. Bewusstlos. Der Notrufknopf ist unerreichbar. Die nächste Runde ist erst in zwei Stunden.'
+          title: 'Der ungehörte Sturz',
+          body: 'Ein Bewohner stürzt, bewusstlos. Der Rufknopf ist außer Reichweite. Stunden vergehen bis zur nächsten geplanten Kontrolle, was einen kleinen Vorfall zu einem kritischen macht.'
         },
         {
-          title: 'Das Hindernis, das\njeden Pitch zerstört',
-          body: 'Cloud-Audio-Lösungen scheitern da, wo sie am dringendsten gebraucht werden. Deutsche Datenschutzbeauftragte, Krankenhaus-IT und Betriebsräte blockieren sie.'
+          title: 'Die Datenschutz-Sackgasse',
+          body: 'Cloud-basierte Audioüberwachung ist für datenschutzbewusste Organisationen ein No-Go. Datenschutzbeauftragte, IT-Abteilungen und Betriebsräte in Branchen wie dem deutschen Gesundheitswesen fordern Lösungen, die Daten lokal halten.'
         },
         {
-          title: 'Der Vorfall\nohne Zeugen',
-          body: 'Eine Maschine fällt aus. Ein Arbeiter ist verletzt. Kein Alarm wird ausgelöst. Die Haftung besteht dennoch.'
+          title: 'Die unsichtbare Haftung',
+          body: 'Eine Maschine fällt aus, ein Arbeiter wird verletzt, aber es wird kein Alarm ausgelöst. Der Vorfall bleibt unbemerkt, aber die Haftung bleibt bestehen, was zu erheblichen finanziellen und betrieblichen Risiken führt.'
         }
       ]
     },
@@ -275,7 +275,7 @@ export const translations = {
       sectionLabel: 'Für Entwickler',
       title1: 'Integration in Tagen.',
       title2: 'Nicht in Monaten.',
-      subtitle: 'Ein SDK für B2B-Lösungsanbieter, die Audiointelligenz benötigen. Ihr Gerät hat bereits ein Mikrofon. Wir geben ihm einen Zweck.',
+      subtitle: 'Ein SDK für Hardware-Lösungsanbieter, die Audio-Intelligenz benötigen. Ihr Gerät hat bereits ein Mikrofon. Wir geben ihm einen Zweck.',
       codeTitle: 'auris_sdk — beispielausgabe',
       codeComment: '# Auris sendet nur ein strukturiertes Event — weiter nichts',
       features: [
@@ -289,7 +289,7 @@ export const translations = {
         },
         {
           title: 'Vertikale Modelle',
-          body: 'Die Modelle sind auf Industrie-, Anlage-, und Krankenhausumgebungen vortrainiert. Keine generischen Klassifikatoren.'
+          body: 'Vortrainiert für Geräusche im Gesundheitswesen und in Pflegeheimen. Keine generischen Klassifikatoren.'
         },
         {
           title: 'Eigene Sounds anlernen',
@@ -301,7 +301,7 @@ export const translations = {
       label: 'Kontakt aufnehmen',
       title: 'Gebaut für Umgebungen, in denen Fehler nicht verzeihbar sind.',
       button: 'Kontaktieren Sie uns',
-      tag: "Early Stages @ TUM Venture Labs - Derzeit auf der Suche nach Integrationspartnern"
+      tag: "Early Stage @ TUM Venture Labs - Derzeit auf der Suche nach Integrationspartnern"
     },
     contact: {
       label: 'KONTAKT',

@@ -13,16 +13,16 @@ export const translations = {
       requestBtn: 'Get in touch'
     },
     hero: {
-      title1: "Turn any microphone",
-      title2: "into a ",
-      title3: "smart sensor.",
+      title1: "Monitor regulated",
+      title2: "environments using ",
+      title3: "audio.",
       title4: "Enable",
       rotatingWords: [
         "passive audio insights.",
         "on-edge ML inference.",
         "targeted monitoring."
       ],
-      subtitle: "Supercharge your hardware using Auris to get on-device audio classification for regulated environments. No audio is stored. Just transmit the insight that matters.",
+      subtitle: "Supercharge your hardware using Auris to get on-device audio insights for regulated environments. No audio is stored. Just transmit the insight that matters.",
       keywords: ['falls', 'distress', 'screams', 'cries', 'whimpers']
     },
     stats: [
@@ -172,16 +172,16 @@ export const translations = {
       requestBtn: 'Kontakt aufnehmen'
     },
     hero: {
-      title1: "Verwandeln Sie jedes Mikrofon",
-      title2: "in einen ",
-      title3: "smarten Sensor.",
+      title1: "Überwachen Sie regulierte",
+      title2: "Umgebungen mittels ",
+      title3: "Audio.",
       title4: "Ermöglichen Sie",
       rotatingWords: [
         "passive Audio-Analysen.",
         "On-Edge ML Inferenz.",
         "gezielte Überwachung."
       ],
-      subtitle: "Erweitern Sie Ihre Hardware mit Auris für geräteinterne Audio-Klassifizierung in regulierten Umfeldern. Es werden keine Audiodaten gespeichert. Übertragen Sie nur die wichtigen Erkenntnisse.",
+      subtitle: "Erweitern Sie Ihre Hardware mit Auris für geräteinterne Audio-Analysen in regulierten Umfeldern. Es werden keine Audiodaten gespeichert. Übertragen Sie nur die wichtigen Erkenntnisse.",
       keywords: ['Stürze', 'Notlage', 'Schreie', 'Weinen', 'Wimmern']
     },
     stats: [

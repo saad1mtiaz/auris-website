@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
+import emailjs from '@emailjs/browser';
 
 export default function ContactPage() {
   const { t } = useLanguage();
@@ -11,26 +12,26 @@ export default function ContactPage() {
     setStatus('saving');
 
     const form = e.currentTarget;
-    const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json'
-        },
-        body: formData
-      });
+      // NOTE: Replace these placeholder values with your actual EmailJS credentials
+      const result = await emailjs.sendForm(
+        'service_6izyd17',
+        'template_5c712lj',
+        form,
+        'pk4DHD0G0-Cz5Rh20'
+      );
 
-      const data = await response.json();
-      if (data.success) {
+      if (result.text === 'OK') {
         setStatus('success');
         form.reset();
       } else {
         setStatus('error');
+        console.error('EmailJS Error:', result);
       }
     } catch (error) {
       setStatus('error');
+      console.error('EmailJS Exception:', error);
     }
   };
 
@@ -82,31 +83,29 @@ export default function ContactPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-              {/* NOTE: Replace the value below with your actual Web3Forms access key */}
-              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="name" className="font-mono text-[10px] tracking-widest text-text-ghost uppercase">
+                  <label htmlFor="user_name" className="font-mono text-[10px] tracking-widest text-text-ghost uppercase">
                     {t.contact?.nameLabel || 'Name'}
                   </label>
                   <input 
                     type="text" 
-                    id="name" 
-                    name="name" 
+                    id="user_name" 
+                    name="user_name" 
                     required
                     className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-white focus:outline-none focus:border-accent transition-colors"
                   />
                 </div>
                 
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="email" className="font-mono text-[10px] tracking-widest text-text-ghost uppercase">
+                  <label htmlFor="user_email" className="font-mono text-[10px] tracking-widest text-text-ghost uppercase">
                     {t.contact?.emailLabel || 'Email'}
                   </label>
                   <input 
                     type="email" 
-                    id="email" 
-                    name="email" 
+                    id="user_email" 
+                    name="user_email" 
                     required
                     className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-white focus:outline-none focus:border-accent transition-colors"
                   />

@@ -51,7 +51,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="font-serif text-[clamp(40px,5vw,60px)] font-light leading-tight text-white mb-4"
+            className="font-serif text-[clamp(40px,5vw,60px)] font-light leading-tight text-text-primary mb-4"
           >
             {t.contact?.title || 'Let\'s talk about your integration.'}
           </motion.h1>
@@ -78,7 +78,7 @@ export default function ContactPage() {
                   <path d="M20 6L9 17l-5-5"/>
                 </svg>
               </div>
-              <h3 className="font-serif text-[24px] mb-3 text-white">{t.contact?.successTitle || 'Message Sent'}</h3>
+              <h3 className="font-serif text-[24px] mb-3 text-text-primary">{t.contact?.successTitle || 'Message Sent'}</h3>
               <p className="text-text-muted">{t.contact?.successMessage || 'We have received your message and will be in touch shortly.'}</p>
             </div>
           ) : (
@@ -94,7 +94,7 @@ export default function ContactPage() {
                     id="user_name" 
                     name="user_name" 
                     required
-                    className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-white focus:outline-none focus:border-accent transition-colors"
+                    className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-text-primary focus:outline-none focus:border-accent transition-colors"
                   />
                 </div>
                 
@@ -107,7 +107,7 @@ export default function ContactPage() {
                     id="user_email" 
                     name="user_email" 
                     required
-                    className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-white focus:outline-none focus:border-accent transition-colors"
+                    className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-text-primary focus:outline-none focus:border-accent transition-colors"
                   />
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default function ContactPage() {
                   type="text" 
                   id="company" 
                   name="company" 
-                  className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-white focus:outline-none focus:border-accent transition-colors"
+                  className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-text-primary focus:outline-none focus:border-accent transition-colors"
                 />
               </div>
 
@@ -133,7 +133,7 @@ export default function ContactPage() {
                   name="message" 
                   rows={5}
                   required
-                  className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-white focus:outline-none focus:border-accent transition-colors resize-none"
+                  className="bg-bg border border-border-hairline px-4 py-3 text-[14px] text-text-primary focus:outline-none focus:border-accent transition-colors resize-none"
                 />
               </div>
 

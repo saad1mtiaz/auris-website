@@ -1,8 +1,11 @@
+import { Sun, Moon } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useTheme } from '../contexts/ThemeContext';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export default function Navigation() {
   const { t, language, setLanguage } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -76,6 +79,13 @@ export default function Navigation() {
           >
             {t.nav.requestBtn}
           </Link>
+          <button
+            onClick={toggleTheme}
+            className="ml-4 text-text-muted hover:text-accent transition-colors duration-300"
+            aria-label="Toggle theme"
+          >
+            {theme === 'light' ? <Moon size={16} strokeWidth={1.5} /> : <Sun size={16} strokeWidth={1.5} />}
+          </button>
         </div>
       </div>
     </nav>

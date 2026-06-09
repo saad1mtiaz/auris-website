@@ -39,7 +39,7 @@ export default function SDK() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-black/40 hairline-border rounded-[4px] overflow-hidden"
+          className="bg-code-bg hairline-border rounded-[4px] overflow-hidden"
         >
           <div className="px-5 py-3 border-b border-border-hairline flex items-center gap-2">
             {[1, 2, 3].map(i => <div key={i} className="w-2 h-2 rounded-full bg-border-hairline" />)}

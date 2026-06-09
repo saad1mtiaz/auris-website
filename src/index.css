@@ -18,8 +18,26 @@
 
   --color-code-string: #E8C07D;
   --color-code-key: #A0A8F0;
+  --color-code-bg: rgba(0, 0, 0, 0.40);
 
   --radius-xs: 2px;
+}
+
+/* Bright / light theme — overrides the dark @theme tokens above when
+   the `light` class is present on <html> (toggled by ThemeContext). */
+html.light {
+  --color-bg: #F7F5EF;
+  --color-bg-secondary: #FFFFFF;
+  --color-text-primary: #16161F;
+  --color-text-muted: rgba(22, 22, 31, 0.55);
+  --color-text-ghost: rgba(22, 22, 31, 0.30);
+  --color-accent: #0FA37F;
+  --color-accent-dim: rgba(15, 163, 127, 0.12);
+  --color-accent-glow: rgba(15, 163, 127, 0.06);
+  --color-border-hairline: rgba(0, 0, 0, 0.10);
+  --color-code-string: #B9831F;
+  --color-code-key: #5560D0;
+  --color-code-bg: rgba(0, 0, 0, 0.04);
 }
 
 @layer base {
@@ -31,6 +49,7 @@
     scroll-behavior: smooth;
     background-color: var(--color-bg);
     color: var(--color-text-primary);
+    transition: background-color 0.4s ease, color 0.4s ease;
   }
 
   body {

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
@@ -8,16 +9,18 @@ export default function App() {
   const basename = '/';
 
   return (
-    <LanguageProvider>
-      <BrowserRouter basename={basename}>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<HomePage />} />
-            <Route path="contact" element={<ContactPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </LanguageProvider>
+    <ThemeProvider>
+      <LanguageProvider>
+        <BrowserRouter basename={basename}>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<HomePage />} />
+              <Route path="contact" element={<ContactPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
 
